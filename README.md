@@ -3,7 +3,7 @@
 Leverage Self-organizing map (SOM) for visualizing systemic risks and predicting systemic events
 
 1. Collect the quarterly data for countries from combination of sources (Oecd, BIS,..)
-2. For the countries, moreover collecte the classification information - composite financial stress indicator (range from 0-1)
+2. For the countries, moreover collect the classification information - composite financial stress indicator (range from 0-1)
 3. Calculate 0.25, 0.5, 0.75 for the quantile for composite financial stress indicator for each country, based on this, split data into 4 categories - assign the 4th category as the crises one
 4. Train logistic regression on the country level to get accuracy and false negatives results - to serve as a benchmark for SOM
 5. Hyperparametrization to obtain the “correct” SOM inputs (size of the grid, distance metrics, learning rate) - trained with classified data
@@ -30,7 +30,7 @@ TextDataLink.csv - List of Reuters Article archive
 # SOM SCRIPTS
 -----------------------------------
 - R using The Kohonen package
-- Python TF for hyper parameter. optimization
+- Python TF for hyperparameter. optimization
 
 The algorithm to produce a SOM from a sample data set can be summarised as follows:
 - Select the size and type of the map. The shape can be hexagonal or square, depending on the shape of the nodes your require. Typically, hexagonal grids are preferred since each node then has 6 immediate neighbours.
