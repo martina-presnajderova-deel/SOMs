@@ -21,7 +21,9 @@ Leverage Self-organizing map (SOM) for visualizing systemic risks and predicting
 # TRAINING DATASET FILE DESCRIPTION
 -----------------------------------
 SOM_variables.ipynb - Jupyter notebook describing variables creation
-TextDataLink.csv - List of Reuters Article archive
+TextDataLink.csv - Scraped List of Reuters Article archive (*Yes, I know they have an API. No it didn't work. Yes I do have a Mac.*)
+textdata = pd.read_csv('/Users/martinapresnajderova/Desktop/Diplomka/variables/TextDataLink.csv')
+textdata.head()
 
 
 
